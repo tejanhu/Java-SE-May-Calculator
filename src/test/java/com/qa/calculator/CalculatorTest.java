@@ -29,7 +29,7 @@ public class CalculatorTest {
 	@Test
 	public void divideTest() {
 		Calculator calc = new Calculator();
-		int actualValue = calc.subtract(5, 5);
+		int actualValue = calc.divide(5, 5);
 		Assert.assertEquals(1, actualValue);
 	}
 

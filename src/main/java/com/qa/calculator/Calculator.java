@@ -2,7 +2,11 @@ package com.qa.calculator;
 
 public class Calculator {
 	
-	Functionality subtractor = new Functionality();
+	private iAlgorithm iAlgo;
+	
+	public Calculator(iAlgorithm iAlgo) {
+		this.iAlgo = iAlgo;
+	}
 
 	public int add(int num1, int num2) {
 		return num1 + num2;
@@ -13,7 +17,7 @@ public class Calculator {
 	}
 	
 	public int subtract(int num1, int num2) {
-		return subtractor.subtract(num1, num2);
+		return iAlgo.calc(num1, num2);
 	}
 
 }
